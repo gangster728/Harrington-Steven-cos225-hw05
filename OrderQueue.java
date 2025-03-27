@@ -3,10 +3,6 @@ public class OrderQueue {
     private int queueSize = 0;
     LinkedQueue<CustomerOrder> Queue = new LinkedQueue<CustomerOrder>();
 
-    public void addStock(int add){
-        stock = stock + add;
-    }
-
     public OrderQueue(){
         stock = 0;
     }
@@ -19,6 +15,10 @@ public class OrderQueue {
         CustomerOrder order = new CustomerOrder(quantity);
         Queue.enqueue(order);
         this.queueSize = queueSize + 1;
+    }
+
+    public void addStock(int add){
+        stock = stock + add;
     }
 
     public void fulfilloneOrder(){

@@ -3,7 +3,7 @@ public class CustomerOrder {
     public String date;
     public int quantity;
 
-    public CustomerOrder(){
+    public CustomerOrder(){ 
     }
     public CustomerOrder(int quantity){
         this.quantity = quantity;
