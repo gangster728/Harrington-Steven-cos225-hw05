@@ -9,7 +9,7 @@ public class CustomerOrder {
         this.quantity = quantity;
     }
 
-    public void ShipProduct(int quantity){
+    public void ShipProduct(){
         if (quantity > 0){
           quantity--;  
         }
