@@ -32,12 +32,7 @@ public class OrderQueue {
 
     public void fulfillallOrders(){
         while (this.stock > 0){
-            Queue.getFront().ShipProduct();
-            this.stock--;
-            if(Queue.getFront().quantity == 0){
-                Queue.dequeue();
-                this.queueSize = queueSize - 1;
-            } 
+            fulfilloneOrder();
         }
     }
 
